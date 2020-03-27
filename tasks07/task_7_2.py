@@ -17,6 +17,8 @@ def config_commands(filename):
             line = line.strip()
             if line.startswith('!'):
                 continue
+            elif alg_check(line):
+                continue
             else:
                 print(line)
 
@@ -39,4 +41,21 @@ def check_if_file_exists(filename):
             return False
 
 
+#
+
+def alg_check(str):
+    # for word in ignore:
+    elements = str.split()
+    for element in elements:
+        if element in ignore:
+         #   print(element + " Ignored")
+            return True
+            break
+#        else:
+           # print(element + " Not ignored")
+    return False
+
+#
+# if alg_check("spanning-tree portfast edge trunk"):
+#     print("string ignored")
 config_print()
