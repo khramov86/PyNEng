@@ -21,13 +21,13 @@ def check_ip(ip):
     if len(octet) == 4:
         for num in octet:
             # print(num)
-            if int(num) not in range(0,256):
+            if int(num) not in range(0, 256):
                 check_status = False
                 break
     if check_status:
-        return "Адрес введен верно"
+        return True
     else:
-        return "Неправильный ip-адрес"
+        return False
 
 
 def network_type(ip):
@@ -60,5 +60,13 @@ def test():
     network_type('test')
     network_type('0.1.1.1')
 
+
 # test()
-print(check_ip("256.0.0.0"))
+while True:
+    ip = input("Введите IP-адрес: ")
+    if check_ip(ip):
+        print("Адрес введен верно")
+        print(ip)
+        break
+    else:
+        print("Адрес введен неверно")
