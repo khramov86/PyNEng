@@ -20,15 +20,14 @@ def check_ip(ip):
     octet = ip.split('.')
     if len(octet) == 4:
         for num in octet:
-            print(num)
-            for i in range(0, 256):
-                if num != i:
-                    check_status == False
-                    break
+            # print(num)
+            if int(num) not in range(0,256):
+                check_status = False
+                break
     if check_status:
-        return True
+        return "Адрес введен верно"
     else:
-        return False
+        return "Неправильный ip-адрес"
 
 
 def network_type(ip):
@@ -61,5 +60,5 @@ def test():
     network_type('test')
     network_type('0.1.1.1')
 
-test()
-print(check_ip("255.257.120.1"))
+# test()
+print(check_ip("256.0.0.0"))
