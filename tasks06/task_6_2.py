@@ -61,5 +61,5 @@ def test():
     network_type('test')
     network_type('0.1.1.1')
 
-
+test()
 print(check_ip("255.257.120.1"))
