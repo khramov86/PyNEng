@@ -84,15 +84,23 @@ end
 
 ignore = ['duplex', 'alias', 'Current configuration']
 
-for lst in str.split('\n'):
-    #print(lst)
-    for word in ignore:
-        #print(word)
-        if lst.strip().find(word) == 0:
-             print(lst)
-        #     pass
 
+def alg_check_andr(str):
+    for s in str.strip().split("\n"):
+        # print(s)
+        # s = s.strip()
+        # if [word for word in ignore if s.find(word)]:
+        #     print(s)
+        for word in ignore:
+            if bool(s.strip().find(word)):
+                print(s)
+                break
 
+            # if bool(s.find('!')) and bool(s.find(word))==False:
+            #     print(s)
+        #print(s)
+
+alg_check_andr(str)
 
 # string =' transport duplex input all'
 # if string.find('duplex'):

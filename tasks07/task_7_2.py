@@ -48,14 +48,21 @@ def alg_check(str):
     elements = str.split()
     for element in elements:
         if element in ignore:
-         #   print(element + " Ignored")
+            #   print(element + " Ignored")
             return True
             break
-#        else:
-           # print(element + " Not ignored")
+    #        else:
+    # print(element + " Not ignored")
     return False
+
 
 #
 # if alg_check("spanning-tree portfast edge trunk"):
 #     print("string ignored")
-config_print()
+# config_print()
+
+
+def alg_check_andr():
+    for s in str.split("\n"):
+        if [word for word in ignore if word in s]:
+            print(s)
