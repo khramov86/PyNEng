@@ -1,7 +1,7 @@
-- [ ] I. Основы Python 
+- [X] I. Основы Python 
 
 https://pyneng.readthedocs.io/ru/latest/book/Part_I.html
-- [ ] II. Повторное использование кода 
+- [X] II. Повторное использование кода 
 
 https://pyneng.readthedocs.io/ru/latest/book/Part_II.html
 - [ ] III. Регулярные выражения 
