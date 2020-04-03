@@ -1,22 +1,5 @@
 - [X] I. Основы Python https://pyneng.readthedocs.io/ru/latest/book/Part_I.html
-
-	- [X] Подготовка к работе
-
-	- [X] Использование Git и GitHub
-
-	- [X] Начало работы с Python
-
-	- [X] Типы данных в Python
-
-	- [X] Создание базовых скриптов
-
-	- [X] Контроль хода программы
-
-	- [X] Работа с файлами
-
-	- [X] Примеры использования основ
-
-- [ ] II. Повторное использование кода https://pyneng.readthedocs.io/ru/latest/book/Part_II.html
+- [] II. Повторное использование кода https://pyneng.readthedocs.io/ru/latest/book/Part_II.html
 
 	- [ ] Функции
 
@@ -60,7 +43,7 @@
 
 - [ ] VII.  Основы объектно-ориентированного программирования https://pyneng.readthedocs.io/ru/latest/book/Part_VII.html
 
-	- [X] Основы ООП
+	- [ ] Основы ООП
 
 	- [ ] Специальные методы
 
