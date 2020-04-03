@@ -21,13 +21,19 @@ def config_commands(filename):
         return temp
 
 
+def write_to_file(line):
+    with open('cleaned.txt', 'w', encoding='utf8') as f:
+        print(line, file=f)
+
+
 def ignore_wrdsinlst():
+    result = ''
     lst = config_commands('config_sw1.txt')
-    lst = lst.split('\n')
+    lst = lst.strip().split('\n')
     for line in lst:
         if not any(ignore_word in line for ignore_word in ignore):
-            print(line)
-
+            result += line + '\n'
+    write_to_file(result)
 
 ignore_wrdsinlst()
 
