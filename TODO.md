@@ -1,24 +1,25 @@
-- [X] I. РћСЃРЅРѕРІС‹ Python 
+https://pyneng.readthedocs.io/ru/latest/book/Part_VIII.html
+- [X] I. Основы Python 
 
 https://pyneng.readthedocs.io/ru/latest/book/Part_I.html
-- [X] II. РџРѕРІС‚РѕСЂРЅРѕРµ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РєРѕРґР° 
+- [ ] II. Повторное использование кода 
 
 https://pyneng.readthedocs.io/ru/latest/book/Part_II.html
-- [ ] III. Р РµРіСѓР»СЏСЂРЅС‹Рµ РІС‹СЂР°Р¶РµРЅРёСЏ 
+- [ ] III. Регулярные выражения 
 
 https://pyneng.readthedocs.io/ru/latest/book/Part_III.html
-- [ ] IV. Р—Р°РїРёСЃСЊ Рё РїРµСЂРµРґР°С‡Р° РґР°РЅРЅС‹С… 
+- [ ] IV. Запись и передача данных 
 
 https://pyneng.readthedocs.io/ru/latest/book/Part_IV.html
-- [ ] V. Р Р°Р±РѕС‚Р° СЃ СЃРµС‚РµРІС‹Рј РѕР±РѕСЂСѓРґРѕРІР°РЅРёРµРј 
+- [ ] V. Работа с сетевым оборудованием 
 
 https://pyneng.readthedocs.io/ru/latest/book/Part_V.html
 - [ ] VI. Ansible 
 
 https://pyneng.readthedocs.io/ru/latest/book/Part_VI.html
-- [ ] VII.  РћСЃРЅРѕРІС‹ РѕР±СЉРµРєС‚РЅРѕ-РѕСЂРёРµРЅС‚РёСЂРѕРІР°РЅРЅРѕРіРѕ РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЏ 
+- [ ] VII.  Основы объектно-ориентированного программирования 
 
 https://pyneng.readthedocs.io/ru/latest/book/Part_VII.html
-- [ ] VIII. Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ 
+- [ ] VIII. Дополнительная информация 
 
 https://pyneng.readthedocs.io/ru/latest/book/Part_VIII.html
