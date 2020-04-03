@@ -1,24 +1,70 @@
-- [X] I. Основы Python 
+- [ ] I. Основы Python https://pyneng.readthedocs.io/ru/latest/book/Part_I.html
 
-https://pyneng.readthedocs.io/ru/latest/book/Part_I.html
-- [X] II. Повторное использование кода 
+	- [ ] Подготовка к работе
 
-https://pyneng.readthedocs.io/ru/latest/book/Part_II.html
-- [ ] III. Регулярные выражения 
+	- [ ] Использование Git и GitHub
 
-https://pyneng.readthedocs.io/ru/latest/book/Part_III.html
-- [ ] IV. Запись и передача данных 
+	- [ ] Начало работы с Python
 
-https://pyneng.readthedocs.io/ru/latest/book/Part_IV.html
-- [ ] V. Работа с сетевым оборудованием 
+	- [ ] Типы данных в Python
 
-https://pyneng.readthedocs.io/ru/latest/book/Part_V.html
-- [ ] VI. Ansible 
+	- [ ] Создание базовых скриптов
 
-https://pyneng.readthedocs.io/ru/latest/book/Part_VI.html
-- [ ] VII.  Основы объектно-ориентированного программирования 
+	- [ ] Контроль хода программы
 
-https://pyneng.readthedocs.io/ru/latest/book/Part_VII.html
-- [ ] VIII. Дополнительная информация 
+	- [ ] Работа с файлами
 
-https://pyneng.readthedocs.io/ru/latest/book/Part_VIII.html
+	- [ ] Примеры использования основ
+
+- [ ] II. Повторное использование кода https://pyneng.readthedocs.io/ru/latest/book/Part_II.html
+
+	- [ ] Функции
+
+	- [ ] Полезные функции
+
+	- [ ] Модули
+
+	- [ ] Полезные модули
+
+	- [ ] Итераторы, итерируемые объекты и генераторы
+
+- [ ] III. Регулярные выражения https://pyneng.readthedocs.io/ru/latest/book/Part_III.html
+
+	- [ ] Синтаксис регулярных выражений
+
+	- [ ] Модуль re
+
+- [ ] IV. Запись и передача данных https://pyneng.readthedocs.io/ru/latest/book/Part_IV.html
+
+	- [ ] Unicode
+
+	- [ ] Работа с файлами в формате CSV, JSON, YAML
+
+	- [ ] Работа с базами данных
+
+- [ ] V. Работа с сетевым оборудованием https://pyneng.readthedocs.io/ru/latest/book/Part_V.html
+
+	- [ ] Подключение к оборудованию
+
+	- [ ] Одновременное подключение к нескольким устройствам
+
+	- [ ] Шаблоны конфигураций с Jinja2
+
+	- [ ] Обработка вывода команд TextFSM
+
+- [ ] VI. Ansible https://pyneng.readthedocs.io/ru/latest/book/Part_VI.html
+
+	- [ ] Основы Ansible
+
+	- [ ] Сетевые модули
+
+- [ ] VII.  Основы объектно-ориентированного программирования https://pyneng.readthedocs.io/ru/latest/book/Part_VII.html
+
+	- [ ] Основы ООП
+
+	- [ ] Специальные методы
+
+	- [ ] Наследование
+
+- [ ] VIII. Дополнительная информация https://pyneng.readthedocs.io/ru/latest/book/Part_VIII.html
+
