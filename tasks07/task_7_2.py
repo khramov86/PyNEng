@@ -6,24 +6,39 @@ author Vladimir Khramov
 """
 import os
 
-filename = input("Введите имя файла ")
+# filename = input("Введите имя файла ")
 
 ignore = ['duplex', 'alias', 'Current configuration']
 
 
 def config_commands(filename):
     with open(filename, 'r') as f:
+        temp = ''
         for line in f:
             line = line.strip()
-            if line.startswith('!'):
-                continue
-            elif alg_check(line):
-                continue
-            else:
-                print(line)
+            if not line.startswith('!'):
+                temp += line + '\n'
+        return temp
 
 
-def config_print():
+def write_to_file(line):
+    with open('cleaned.txt', 'w', encoding='utf8') as f:
+        print(line, file=f)
+
+
+def ignore_wrdsinlst():
+    result = ''
+    lst = config_commands('config_sw1.txt')
+    lst = lst.strip().split('\n')
+    for line in lst:
+        if not any(ignore_word in line for ignore_word in ignore):
+            result += line + '\n'
+    write_to_file(result)
+
+ignore_wrdsinlst()
+
+
+def config_print(filename=''):
     if filename:
         if check_if_file_exists(filename):
             config_commands(filename)
@@ -41,28 +56,4 @@ def check_if_file_exists(filename):
             return False
 
 
-#
-
-def alg_check(str):
-    # for word in ignore:
-    elements = str.split()
-    for element in elements:
-        if element in ignore:
-            #   print(element + " Ignored")
-            return True
-            break
-    #        else:
-    # print(element + " Not ignored")
-    return False
-
-
-#
-# if alg_check("spanning-tree portfast edge trunk"):
-#     print("string ignored")
-# config_print()
-
-
-def alg_check_andr():
-    for s in str.split("\n"):
-        if [word for word in ignore if word in s]:
-            print(s)
+config_print()
