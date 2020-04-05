@@ -3,6 +3,8 @@ import subprocess
 
 base_dir = 'C:\\sctretching\\'
 
+# TODO
+# Form list of commands to execute the one time
 
 # Function to rename multiple files
 def rename():
