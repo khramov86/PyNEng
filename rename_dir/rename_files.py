@@ -1,8 +1,11 @@
 import os
 import subprocess
 
-base_dir = 'C:\\sctretching\\'
+base_dir = 'C:\\stretching\\'
 
+
+# TODO
+# Form list of commands to execute the one time
 
 # Function to rename multiple files
 def rename():
@@ -91,20 +94,40 @@ def remove_symls(dct):
         for i in value.split(","):
             # print(i.strip(' '))
             if int(i.strip(' ')) in range(10):
-                temp += '\nfile \'' + '0' + i.strip(' ') + '.mp4\'' + ' ' + '\nfile \'pause.mp4\''
+                temp += '0' + i.strip(' ') + '.mp4 '
             else:
-                temp += '\nfile \'' + i.strip(' ') + '.mp4\'' + ' ' + '\nfile \'pause.mp4\''
+                temp += i.strip(' ') + '.mp4 '
 
         tempdict[key] = temp
     return tempdict
 
 
+def file_save(str):
+    with open(base_dir + 'script.bat', 'a', encoding='866') as f:
+        print(str, file=f)
+
+
 def command_form():
     com = remove_symls(parse_text())
-    for key, val in com.items():
-        print("ffmpeg -f concat -safe 0 -i < \"{}\" -c copy {}".format(val + '\n', 'Day' +key[5:] +'.mp4'))
+
+    dct = {key: value.strip().split(' ') for key, value in com.items()}
+
+    for key, value in dct.items():
+        value = ' pause.mp4 '.join(value)
+        value = "for %%i in (" + value + ");do @echo file '%%i'"
+        file_save("echo # > mylist.txt")
+        file_save("{} >> mylist.txt".format(value))
+        # print("ffmpeg -f concat -safe 0 -i < ({}) -c copy {}".format(value, 'day' + key[5:] + '.mp4'))
+        file_save("ffmpeg -f concat -safe 0 -i mylist.txt -c copy {}".format('day' + key[5:] + '.mp4'))
+        file_save("echo # > mylist.txt")
+
+    # for key, val in com.items():
+    #     print("ffmpeg -f concat -safe 0 -i < \"{}\"\n-c copy {}".format('\n' + val , 'day' + key[5:] + '.mp4'))
 
 command_form()
+
+
+
 
 # if __name__ == '__main__':
 #     main()
