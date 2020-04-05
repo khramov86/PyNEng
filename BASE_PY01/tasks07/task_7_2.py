@@ -49,7 +49,7 @@ def config_print(filename=''):
 
 
 def check_if_file_exists(filename):
-    for x in os.listdir('.'):
+    for x in os.listdir(''):
         if filename in x:
             return True
         else:

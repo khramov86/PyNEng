@@ -91,17 +91,20 @@ def remove_symls(dct):
         for i in value.split(","):
             # print(i.strip(' '))
             if int(i.strip(' ')) in range(10):
-                temp += '0' + i.strip(' ') + '.mp4' + ' '
+                temp += '\nfile \'' + '0' + i.strip(' ') + '.mp4\'' + ' ' + '\nfile \'pause.mp4\''
             else:
-                temp += i.strip(' ') + '.mp4' + ' '
+                temp += '\nfile \'' + i.strip(' ') + '.mp4\'' + ' ' + '\nfile \'pause.mp4\''
 
-        tempdict[key] = temp[:-1]
+        tempdict[key] = temp
     return tempdict
 
 
-print(remove_symls(parse_text()))
+def command_form():
+    com = remove_symls(parse_text())
+    for key, val in com.items():
+        print("ffmpeg -f concat -safe 0 -i < \"{}\" -c copy {}".format(val + '\n', 'Day' +key[5:] +'.mp4'))
 
-
+command_form()
 
 # if __name__ == '__main__':
 #     main()
