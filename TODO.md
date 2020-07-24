@@ -14,7 +14,7 @@
 
 - [ ] III. Регулярные выражения https://pyneng.readthedocs.io/ru/latest/book/Part_III.html
 
-	- [ ] Синтаксис регулярных выражений
+	- [X] Синтаксис регулярных выражений
 
 	- [ ] Модуль re
 

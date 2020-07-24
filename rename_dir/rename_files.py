@@ -3,6 +3,8 @@ import subprocess
 
 base_dir = 'C:\\stretching\\'
 
+# TODO
+# Form list of commands to execute the one time
 
 # TODO
 # Form list of commands to execute the one time
